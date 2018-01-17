@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html>
+        <head>
+                <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+                <title>GeoFinder App</title>
+				<link rel="stylesheet" type="text/css" href="mystyle.css">				
+				
+				
+        </head>        
+
+        <body>
+			
+			
+			<h1 style="text-align: center;color: white;margin-bottom: 10px;">Geofinder</h>
+			<div class="app">
+			<div id="dropzone" class="dropzone">Drop files here...</div>
+
+			<div class="info">
+				<div id="fileOutput"></div>
+			</div>
+			<script type="text/javascript" src="dragndrop.js"></script>
+			
+			<div id="maps">
+				 <iframe id="map" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJlRMcQzXL1IkR9NYlkdaL7eg&zoom=15&key=AIzaSyCZLkadB2ynDyYUyw4c8xGamJfPkIvg-DA" allowfullscreen></iframe> 
+				 <div id="userPlace">
+				 	<form class="search" method="post" name="form">
+					<input type="text" name="City" id="inputCity">
+					<input type="button" name="" id="button" onclick="getUserCity()">
+				</form>
+				 </div>
+			</div>
+			
+			<p id="note">**Note default location is set to Ryerson University.**</p>
+
+			
+			
+		
+
+
+			
+
+			<footer class="foot" > &#169; 2017 Anurag Sherkar </footer>
+	    </body>
+	
+</html>
+
